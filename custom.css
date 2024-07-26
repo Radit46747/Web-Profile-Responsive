@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 6.25%;}
+    .col-2 {width: 12.5%;}
+    .col-3 {width: 18.75%;}
+    .col-4 {width: 25%;}
+    .col-5 {width: 31.25%;}
+    .col-6 {width: 37.5%;}
+    .col-7 {width: 43.75%;}
+    .col-8 {width: 50%;}
+    .col-9 {width: 56.25%;}
+    .col-10 {width: 62.5%;}
+    .col-11 {width: 68.75%;}
+    .col-12 {width: 75%;}
+    .col-13 {width: 81.25%;}
+    .col-14 {width: 87.5%;}
+    .col-15 {width: 93.75%;}
+    .col-16 {width: 100%;}
+
+    img.profil {
+        max-width: 192px;
+        max-height: 192px;
+    }
+
+    div.info td {
+      padding-left: 15px;
+      font-size: 30px;
+    }
+
+    div.nick table {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+body {
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+p {
+  font-family: 'Bell MT', 'Segoe UI', 'Times New Roman';
+}
+
+@media only screen and (max-width: 768px) {
+div.img , div.info , div.nick table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.profil {
+  max-width: 256px;
+  max-height: 256px;
+}
+
+div.skill li {
+  font-size: 32px;
+}
+}
+
+img.profil {
+    border: 2px solid yellowgreen;
+    border-radius: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.T {
+  text-align: center;
+  font-size: 24px;
+}
+
+div.bio {
+  background-color: white;
+}
+
+div.bio {
+  border-left: 3px solid green;
+  border-right: 3px solid green;
+  border-top: 3px solid green;
+}
+
+div.list {
+  border-left: 3px solid green;
+  border-right: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+div.nick table , div.nick tr , div.nick td {
+  border: 2px solid yellowgreen;
+  background-color: dodgerblue;
+}
+
+div.info table {
+  font-size: 24px;
+}
+
+div.list {
+  background-color: #ffffff;
+}
+
+tr.list {
+  text-align: center;
+}
+
+.bar1 {
+  color: greenyellow;
+}
+
+.bar2 {
+  color: #008800;
+}
+
+.bar3 {
+  color: red;
+}
+
+div.skill li {
+  font-size: 20px;
+}
+
+div.other li {
+  text-align: justify;
+}
